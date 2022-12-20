@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turn off and remove element</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <main>
+        <div class="buttonContainer">
+            <!-- con la funcion turnOff lo que logramos es tener el poder de cambiar el
+            texto contenido en algun elemento -->
+            <button class="button" onclick="turnOff(this)">On</button>
+            <button class="button" onclick="turnOff(this)">On</button>
+            <button class="button" onclick="turnOff(this)">On</button>
+        </div>
+        
+        <div class="ninjaContainer">
+            <!-- aqui usamos una funcion predefinida llamada hide el cual oculta el 
+                elemento al momento de dar click sobre el -->
+            <img src="/images/blueninja.png" alt="ninja azul" onclick="hide(this)">
+            <img src="/images/redninja.png" alt="ninja rojo" onclick="hide(this)">
+            <img src="/images/greenninja.png" alt="ninja verde" onclick="hide(this)">
+            <img src="/images/violetninja.png" alt="ninja lila" onclick="hide(this)">
+        </div>
+    </main>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
